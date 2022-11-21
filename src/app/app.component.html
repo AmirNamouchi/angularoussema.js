@@ -1,0 +1,5 @@
+<app-header *ngIf="!(_router.url === '/signup' || _router.url === '/login' || _router.url === '/pages-error404' || _router.url === '/' || _router.url === '/#tournois' || _router.url === '/#produits' || _router.url === '/#tuto' || _router.url === '/#contact' || _router.url ==='/pages-401')" ></app-header>
+<app-sidebar *ngIf="!(_router.url === '/signup' || _router.url === '/login' || _router.url === '/pages-error404' || _router.url === '/' || _router.url === '/#tournois' || _router.url === '/#produits' || _router.url === '/#tuto' || _router.url === '/#contact' || _router.url ==='/pages-401')" ></app-sidebar>
+<router-outlet></router-outlet>
+<app-footer *ngIf="!(_router.url === '/signup' || _router.url === '/login' || _router.url === '/pages-error404' || _router.url === '/' || _router.url === '/#tournois' || _router.url === '/#produits' || _router.url === '/#tuto' || _router.url === '/#contact' || _router.url ==='/pages-401') " ></app-footer>
+
